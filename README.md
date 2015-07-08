@@ -20,3 +20,9 @@ here's the important bit:
     var ntypediv = document.getElementById("sayhello")
     var ntype = new NType(ntypediv);
     ntype.begin("hi");
+
+## dev
+
+run `npm install` to install the uglifier
+
+then run `grunt` to concatenate the files in `js/` into one file `lib/mintype.js` and then minify it to `lib/mintype.min.js`
