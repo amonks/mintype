@@ -1,6 +1,6 @@
-window.TYPE = {};
+NType.prototype.TYPE = {};
 
-window.TYPE.A = [
+NType.prototype.TYPE.A = [
 	[2,0],
 	[12,24],
 	[17,24],
@@ -11,7 +11,7 @@ window.TYPE.A = [
 	[7,0]
 ];
 
-window.TYPE.B = [
+NType.prototype.TYPE.B = [
 	[5,0],
 	[5,24],
 	[20,24],
@@ -23,7 +23,7 @@ window.TYPE.B = [
 	[20,0]
 ];
 
-window.TYPE.C = [
+NType.prototype.TYPE.C = [
 	[5,4],
 	[5,20],
 	[9,24],
@@ -42,7 +42,7 @@ window.TYPE.C = [
 	[8,0]
 ];
 
-window.TYPE.D = [
+NType.prototype.TYPE.D = [
 	[5,0],
 	[5,24],
 	[19,24],
@@ -52,7 +52,7 @@ window.TYPE.D = [
 	[5,0]
 ];
 
-window.TYPE.E = [
+NType.prototype.TYPE.E = [
 	[5,0],
 	[5,24],
 	[24,24],
@@ -67,7 +67,7 @@ window.TYPE.E = [
 	[24,0]
 ];
 
-window.TYPE.F = [
+NType.prototype.TYPE.F = [
 	[5,0],
 	[5,24],
 	[24,24],
@@ -80,7 +80,7 @@ window.TYPE.F = [
 	[10,0]
 ];
 
-window.TYPE.G = [
+NType.prototype.TYPE.G = [
 	[5,4],
 	[5,20],
 	[9,24],
@@ -101,7 +101,7 @@ window.TYPE.G = [
 	[8,0]
 ];
 
-window.TYPE.H = [
+NType.prototype.TYPE.H = [
 	[4,0],
 	[4,24],
 	[9,24],
@@ -116,7 +116,7 @@ window.TYPE.H = [
 	[9,0]
 ];
 
-window.TYPE.I = [
+NType.prototype.TYPE.I = [
 	[6,0],
 	[6,5],
 	[12,5],
@@ -131,7 +131,7 @@ window.TYPE.I = [
 	[23,0]
 ];
 
-window.TYPE.J = [
+NType.prototype.TYPE.J = [
 	[5,4],
 	[5,10],
 	[10,10],
@@ -144,7 +144,7 @@ window.TYPE.J = [
 	[9,0]
 ];
 
-window.TYPE.K = [
+NType.prototype.TYPE.K = [
 	[3,0],
 	[3,24],
 	[8,24],
@@ -159,7 +159,7 @@ window.TYPE.K = [
 	[8,0]
 ];
 
-window.TYPE.L = [
+NType.prototype.TYPE.L = [
 	[5,0],
 	[5,24],
 	[10,24],
@@ -168,7 +168,7 @@ window.TYPE.L = [
 	[24,0]
 ];
 
-window.TYPE.M = [
+NType.prototype.TYPE.M = [
 	[2,0],
 	[2,24],
 	[6,24],
@@ -184,7 +184,7 @@ window.TYPE.M = [
 	[7,0]
 ];
 
-window.TYPE.N = [
+NType.prototype.TYPE.N = [
 	[4,0],
 	[4,24],
 	[8,24],
@@ -197,7 +197,7 @@ window.TYPE.N = [
 	[9,0]
 ];
 
-window.TYPE.O = [
+NType.prototype.TYPE.O = [
 	[4,5],
 	[4,19],
 	[9,24],
@@ -208,7 +208,7 @@ window.TYPE.O = [
 	[9,0]
 ];
 
-window.TYPE.P = [
+NType.prototype.TYPE.P = [
 	[5,0],
 	[5,24],
 	[20,24],
@@ -219,7 +219,7 @@ window.TYPE.P = [
 	[10,0]
 ];
 
-window.TYPE.Q = [
+NType.prototype.TYPE.Q = [
 	[4,5],
 	[4,19],
 	[9,24],
@@ -234,7 +234,7 @@ window.TYPE.Q = [
 	[9,0]
 ];
 
-window.TYPE.R = [
+NType.prototype.TYPE.R = [
 	[5,0],
 	[5,24],
 	[20,24],
@@ -248,7 +248,7 @@ window.TYPE.R = [
 	[10,0]
 ];
 
-window.TYPE.S = [
+NType.prototype.TYPE.S = [
 	[6,0],
 	[6,5],
 	[19,5],
@@ -267,7 +267,7 @@ window.TYPE.S = [
 	[20,0]
 ];
 
-window.TYPE.T = [
+NType.prototype.TYPE.T = [
 	[5,19],
 	[5,24],
 	[24,24],
@@ -278,7 +278,7 @@ window.TYPE.T = [
 	[12,19]
 ];
 
-window.TYPE.U = [
+NType.prototype.TYPE.U = [
 	[5,4],
 	[5,24],
 	[10,24],
@@ -291,7 +291,7 @@ window.TYPE.U = [
 	[9,0]
 ];
 
-window.TYPE.V = [
+NType.prototype.TYPE.V = [
 	[3,24],
 	[9,24],
 	[15.5,7],
@@ -301,7 +301,7 @@ window.TYPE.V = [
 	[13,0]
 ];
 
-window.TYPE.W = [
+NType.prototype.TYPE.W = [
 	[0,24],
 	[5,24],
 	[8,10],
@@ -317,7 +317,7 @@ window.TYPE.W = [
 	[6,0]
 ];
 
-window.TYPE.X = [
+NType.prototype.TYPE.X = [
 	[2,0],
 	[11.5,12.6],
 	[3,24],
@@ -332,7 +332,7 @@ window.TYPE.X = [
 	[8,0]
 ];
 
-window.TYPE.Y = [
+NType.prototype.TYPE.Y = [
 	[3,24],
 	[9,24],
 	[14.5,14],
@@ -344,7 +344,7 @@ window.TYPE.Y = [
 	[12,8]
 ];
 
-window.TYPE.Z = [
+NType.prototype.TYPE.Z = [
 	[5,0],
 	[5,4],
 	[17,19],

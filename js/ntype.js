@@ -24,11 +24,17 @@ var SimpleDimensionalObject = function() {
 	};
 };
 
-var NType = function(el) {
+var NType = function(element) {
+
+  this.element = element;
+
+  NType.prototype.utils.normalizeLetterSet(NType.prototype.TYPE);
+
 	// THREE Stuff
 	this.scene = new THREE.Scene();
-	this.w = window.innerWidth;
-	this.h = window.innerHeight;
+  console.log("w,h", this.element.innerWidth, this.element.innerHeight, this.element);
+	this.w = this.element.offsetWidth;
+	this.h = this.element.offsetHeight;
 	this.ORTHO = new THREE.OrthographicCamera( this.w / - 2, this.w / 2, this.h / 2, this.h / - 2, -2000, 2000 );
 	this.PERSP = new THREE.PerspectiveCamera( 75, this.w / this.h, 0.1, 1000 );
 	this.camera = this.ORTHO;
@@ -83,7 +89,7 @@ var NType = function(el) {
 		this.camera.lookAt(new THREE.Vector3(0,0,0));
 		this.renderer.setSize(this.w,this.h);
 		this.renderer.setClearColor(0xFFFFFF);
-		document.body.appendChild(this.renderer.domElement);
+		this.element.appendChild(this.renderer.domElement);
 		this._matrices.update(this.speed);
 		this.setMatrix(this.rotationPlanes);
 	};
@@ -256,6 +262,7 @@ var NType = function(el) {
 	// Convenience method to set the content to
 	// a string
 	this.addString = function(str) {
+    str = str.toUpperCase();
 		var that = this;
 		var arr = str.split("");
 		arr.forEach(function(l) {
@@ -264,7 +271,7 @@ var NType = function(el) {
 	};
 
 	this.addLetter = function(letter) {
-		this.addShape(window.TYPE[letter]);
+		this.addShape(NType.prototype.TYPE[letter]);
 		this.string += letter;
 	};
 
@@ -380,7 +387,11 @@ var NType = function(el) {
 	};
 
 	// starts the thing
-	this.begin = function() {
+	this.begin = function(inputString) {
+    if (this.string.length === 0) {
+      this.addString(inputString);
+    }
+
 		window.requestAnimationFrame(this.begin.bind(this));
 		if (!window.PAUSED) {
 			this.rotate();

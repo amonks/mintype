@@ -4,14 +4,14 @@
   <title>miNType</title>
   <link rel="icon" type="image/png" href="favicon.png">
   <meta charset='UTF-8'>
+  <script type='text/javascript' src='lib/mintype.min.js'></script>
 </head>
-<body>
-<script>
-  var GLOBALSTRING = "mintype";
-</script>
+<body style="background: green;">
+  <div id="sayhello" style="width: 400px; height: 200px;"></div>
+  <script>
+    var ntypediv = document.getElementById("sayhello")
+    var ntype = new NType(ntypediv);
+    ntype.begin("hi");
+  </script>
 </body>
-<script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/three.js/r71/three.min.js'></script>
-<script type='text/javascript' src='js/ntype.js'></script>
-<script type='text/javascript' src='js/type.js'></script>
-<script type='text/javascript' src='js/main.js'></script>
 </html>
