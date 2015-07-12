@@ -12,6 +12,7 @@
     var ntypediv = document.getElementById("sayhello")
     var ntype = new NType(ntypediv);
     var options = {
+      // this bit says which axes to rotate
       matrix: ["xz", "xy"],
     };
     ntype.begin("hi", options);
