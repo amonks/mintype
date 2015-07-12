@@ -1,8 +1,10 @@
 # miNType
 
-miNType is Kevin Zweerink`s [ntype](//github.com/kevinzweerink/ntype) (try it out at [ntype.blue](//ntype.blue)), but with most of the features removed.
+miNType is Kevin Zweerink's [ntype](//github.com/kevinzweerink/ntype) (try it out at [ntype.blue](//ntype.blue)), but with most of the features removed.
 
-It makes it real easy to put some cool 4d type on your page.
+It makes it real easy to put some cool 4d type on your website. You can see an example at the top of this very page.
+
+<!--more-->
 
 ## major limitations
 
