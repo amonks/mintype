@@ -9,7 +9,7 @@ It makes it real easy to put some cool 4d type on your page.
 *   rn you can only have one instance of ntype
 *   you can't customize any of the things yet
     *   like the background color
-    *   or the rotation
+    *   ~~or the rotation~~
 *   it doesn't update when u resize ur window (but does when u refresh)
 
 ## how to
@@ -20,7 +20,11 @@ here's the important bit:
 
     var ntypediv = document.getElementById("sayhello")
     var ntype = new NType(ntypediv);
-    ntype.begin("hi");
+    var options = {
+      // this bit says which axes to rotate
+      matrix: ["xz", "xy"],
+    };
+    ntype.begin("hi", options);
 
 ## dev
 

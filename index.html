@@ -11,7 +11,10 @@
   <script>
     var ntypediv = document.getElementById("sayhello")
     var ntype = new NType(ntypediv);
-    ntype.begin("hi");
+    var options = {
+      matrix: ["xz", "xy"],
+    };
+    ntype.begin("hi", options);
   </script>
 </body>
 </html>

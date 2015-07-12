@@ -26,12 +26,20 @@ module.exports = function(grunt) {
       }
     },
 
+    'watch': {
+      js: {
+        files: ['js/**/*'],
+        tasks: ['build']
+      },
+    },
+
   });
 
 
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
 
   grunt.registerTask('cleanup', [
